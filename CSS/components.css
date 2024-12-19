@@ -1,0 +1,132 @@
+/* Options Section */
+.options {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.options button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #004c99;
+}
+
+
+
+/* Scrabble Board Section */
+.scrabble-board {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.board-image {
+    width: 100%;
+    max-width: 1000px; /* Increased max-width for a bigger board */
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.board-line {
+    display: flex;
+    justify-content: center;
+    gap: 5px;  /* Increased gap for larger squares */
+}
+
+.board-square {
+    width: 70px;  /* Increased width */
+    height: 70px; /* Increased height */
+    display: inline-block;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 70px;  /* Adjusted to center text vertically */
+    font-size: 24px;  /* Increased font size */
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2px; /* Adjusted margin */
+}
+
+
+
+
+
+
+
+
+/* Tile Rack Section */
+.tile-rack {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Individual Tile Styling */
+.tile {
+    width: 50px;
+    height: 50px;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd700;
+    border: 2px solid #333;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    z-index: 2; /* Tiles are above the rack */
+}
+
+.rack {
+    position: relative;
+    z-index: 1; /* Tiles appear above the rack image */
+    display: flex;
+    flex-direction: row; /* Arrange tiles horizontally */
+    align-items: flex-start; /* Tiles sit above the rack image */
+    gap: 5px;
+    margin-top: 20px; /* Add space above the tiles if necessary */
+}
+
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+/* Active Tile Dragging Effect */
+.tile:active {
+    transform: scale(1.1);
+    cursor: grabbing;
+}
+
+

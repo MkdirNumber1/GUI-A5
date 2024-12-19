@@ -1,0 +1,81 @@
+
+.board {
+    position: relative;
+    display: inline-block;
+}
+
+.board-image {
+    width: 100%;  /* Adjust based on the actual image size */
+    height: auto;
+}
+
+.drop-zone {
+    position: absolute;
+    width: 40px;   /* Adjust this to match the size of the tiles */
+    height: 40px;  /* Adjust based on board layout */
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+
+.drop-zone[data-position="0"] {
+    top: 10px;
+    left: 10px;
+}
+.drop-zone[data-position="1"] {
+    top: 10px;
+    left: 70px;
+}
+.drop-zone[data-position="2"] {
+    top: 10px;
+    left: 130px;
+}
+.drop-zone[data-position="3"] {
+    top: 10px;
+    left: 190px;
+}
+.drop-zone[data-position="4"] {
+    top: 10px;
+    left: 250px;
+}
+.drop-zone[data-position="5"] {
+    top: 10px;
+    left: 310px;
+}
+.drop-zone[data-position="6"] {
+    top: 10px;
+    left: 370px;
+}
+.drop-zone[data-position="7"] {
+    top: 10px;
+    left: 430px;
+}
+.drop-zone[data-position="8"] {
+    top: 10px;
+    left: 490px;
+}
+.drop-zone[data-position="9"] {
+    top: 10px;
+    left: 550px;
+}
+.drop-zone[data-position="10"] {
+    top: 10px;
+    left: 610px;
+}
+.drop-zone[data-position="11"] {
+    top: 10px;
+    left: 670px;
+}
+.drop-zone[data-position="12"] {
+    top: 10px;
+    left: 730px;
+}
+.drop-zone[data-position="13"] {
+    top: 10px;
+    left: 790px;
+}
+.drop-zone[data-position="14"] {
+    top: 10px;
+    left: 850px;
+}
+

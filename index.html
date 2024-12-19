@@ -1,0 +1,80 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Scrabble</title>
+	<link rel="stylesheet" href="CSS/global.css">
+	<link rel="stylesheet" href="CSS/components.css">
+	<link rel="stylesheet" href="CSS/responsive.css">
+	<link rel="stylesheet" href="CSS/drop-zones.css">
+	
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+<header>
+	<h1>Scrabble Game</h1>
+</header>
+
+<main>
+	<!-- Options Section -->
+	<div class="options">
+		<button id="dealTiles">Deal New Tiles</button>
+		<button id="nextWord">Next Word</button>
+		<button id="restartGame">Restart Game</button>
+	</div>
+	
+	<!-- Scrabble Board Section -->
+	<div class="scrabble-board">
+		<h2>Scrabble Board</h2>
+		<div id="board" class="board">
+			<!-- Scrabble Board Image -->
+			<img src="graphics_data/Scrabble_Board_OneLine.png" alt="Scrabble Board" class="board-image">
+			
+			<!-- drop zones -->
+			<div class="drop-zone" data-position="0"></div>
+			<div class="drop-zone" data-position="1"></div>
+			<div class="drop-zone" data-position="2"></div>
+			<div class="drop-zone" data-position="3"></div>
+			<div class="drop-zone" data-position="4"></div>
+			<div class="drop-zone" data-position="5"></div>
+			<div class="drop-zone" data-position="6"></div>
+			<div class="drop-zone" data-position="7"></div>
+			<div class="drop-zone" data-position="8"></div>
+			<div class="drop-zone" data-position="9"></div>
+			<div class="drop-zone" data-position="10"></div>
+			<div class="drop-zone" data-position="11"></div>
+			<div class="drop-zone" data-position="12"></div>
+			<div class="drop-zone" data-position="13"></div>
+			<div class="drop-zone" data-position="14"></div>
+		</div>
+	</div>
+	
+	<!-- Tile Rack Section -->
+	<div class="tile-rack">
+		<div id="rack" class="rack">
+			<img src="graphics_data/scrabble-tile-holder-406774_640.png" alt="Scrabble Tile Holder" class="tile-holder">
+			<!-- Tiles dynamically populated by JS -->
+		</div>
+	</div>
+	
+	<!-- Show score -->
+	<div class="score-section">
+		<h2>Score: <span id="score">0</span></h2>
+	</div>
+</main>
+
+<!--Nice little area for copyright-->
+<footer>
+	<p>&copy; 2024 </p>
+</footer>
+
+<!--<script src="Scripts/game.js"></script>-->
+<script src="Scripts/test1.js"></script>
+</body>
+</html>

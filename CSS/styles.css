@@ -1,0 +1,209 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* Header and Footer Styling */
+header, footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/* Main Layout */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Options Section */
+.options {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.options button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #004c99;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Scrabble Board Section */
+.scrabble-board {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.board-image {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.board-line {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.board-square {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1px; /* Add margin for consistent spacing */
+}
+
+
+
+
+
+
+
+
+
+/* Tile Rack Section */
+.tile-rack {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    height: 100px; /* Adjust height to fit the wooden rack */
+    background-image: url('graphics_data/scrabble-tile-holder-406774_640.png'); /* Replace with the actual path to your wooden rack image */
+    background-size: contain; /* Ensure the image fits the rack */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Center tiles vertically on the rack */
+    justify-content: center; /* Center tiles horizontally */
+    padding: 10px;
+}
+
+/* Tile Holder */
+.tile-holder {
+    display: flex;
+    flex-direction: row; /* Arrange tiles in a horizontal row */
+    align-items: center; /* Align tiles vertically */
+    gap: 5px; /* Add spacing between tiles */
+}
+
+/* Tile */
+.tile {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: grab;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the tile images fit within the tile boundaries */
+    border-radius: 4px; /* Optional: smooth corners for the tiles */
+}
+
+
+
+.tile:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+/* Score Section */
+.score-section {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .board-square, .tile {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    .options button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
